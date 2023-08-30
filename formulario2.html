@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">     <!--28/08/2023-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<h2>Elemento de formulário</h2>
+    <Form action="#"> <!---form abertura de formulário--->
+
+        <label for="cName"> Nome: </label> <!---label legenda--->
+        <input type="text" id="cName"> <!---input caixa de texto--->
+   
+        <label for="snome">Sobrenome:</label>
+        <input type="text" id="snome" >
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade">
+       
+        <label for="eml"> E-mail:</label>
+        <input type="email" id="eml" required>
+
+        <label for="csenha">Senha:</label>
+        <input type="text" id="eml" required>        
+       
+
+    
+        <br><br>
+        <p>QUAL É O SEU GENÉRO:</p>
+            <label for="op2">Feminino</label>
+            <input type="radio" name="curso">
+<br>
+            <label for="op3">Maculino</label>
+            <input type="radio" name="curso">
+<br>
+            <label for="op4">Binário</label>
+            <input type="radio" name="curso">
+<br>
+            <label for="op1">Não Binário</label>
+            <input type="radio" name="curso ">
+<br>
+            <label for="op1">Não quero declarar</label>
+            <input type="radio" name="curso ">
+<br>
+<hr>
+
+            <P>PROBELMAS DE SAÚDE:</P>
+
+            <label for="op2">Rinite</label>
+            <input type="radio" name="curso">
+
+            <label for="op2">Cardiaco(a)</label>
+            <input type="radio" name="curso">
+
+            <label for="op2">Epatite</label>
+            <input type="radio" name="curso">
+
+            <label for="op2">Peste negra</label>
+            <input type="radio" name="curso">
+
+            <label for="op2">Febre amarela</label>
+            <input type="radio" name="curso">
+
+            <label for="op2">COVID19</label>
+            <input type="radio" name="curso">
+<br>
+<hr>
+            <p>ASSUNTOS DENTRO DO CURSO DE WEB:</p>
+
+            <input type="checkbox" nome="transpl" id="transpl" value="tp1">
+            <label for="transpl">HTML</label>
+<br>
+
+            <input type="checkbox" name="transp2" id="transp2" value="tp2">
+            <label for="transp3">CSS</label>
+<br>
+
+            <input type="checkbox" nome="transp3"   id="transp3" value="tp3">
+            <label for="transp3">JAVASCRIPT</label>
+<br>
+            <input type="checkbox" nome="transp4" id="transp4" value="tp4">
+            <label for="transp4">GIT & GITHUB</label>
+<br>
+            <input type="checkbox" nome="transp5" id="transp5" value="tp5">
+            <label for="transp5">PITON</label>
+<br>
+            <input type="checkbox" nome="transp6" id="transp6" value="tp6">
+            <label for="transp6">SQL</label>
+<br>
+            <input type="checkbox" nome="transp6" id="transp6" value="tp6">
+            <label for="transp6">JAVA</label>
+<br>
+            <input type="checkbox" nome="transp6" id="transp6" value="tp6">
+            <label for="transp6">PHP</label>
+<br>
+<hr>
+            <p>OUTROS CURSOS:</p>
+
+            <label for="op2">MICROSOFT OFFICE ESSENCIAL</label>
+            <input type="radio" name="curso">
+<br>
+            <label for="op2">POWER B.I</label>
+            <input type="radio" name="curso">
+<br>
+            <label for="op2">GESTÃO EMPRESARIAL- ERP TOTVS</label>
+            <input type="radio" name="curso">
+<br>
+            <label for="op2">SUPORTE T.I</label>
+            <input type="radio" name="curso">
+<br>
+            <label for="op2">INGLÊS</label>
+            <input type="radio" name="curso">
+<br>
+            <label for="op2">GESTÃO E COMUNICAÇÃO</label>
+            <input type="radio" name="curso">
+<hr>          
+            <p>TURNOS:</p>
+
+            <input type="checkbox" nome="transp6" id="transp6" value="tp6">
+            <label for="transp6">Manhã</label>
+
+            <input type="checkbox" nome="transp6" id="transp6" value="tp6">
+            <label for="transp6">Tarde</label>
+
+            <input type="checkbox" nome="transp6" id="transp6" value="tp6">
+            <label for="transp6">Noite</label>
+<hr>
+        <label for="cidade">Qual a sua cidade?</label>
+        <input type="text"name="cidade" id="cidade" list="sugestao" placeholder="sua cidade">
+
+        <datalist id="'sugestao">
+
+            <option value="Santos"></option>
+            <option value="São Paulo"></option>
+            <option value="Guarulhos"></option>
+            <option value="juquitiba"></option>
+
+        </datalist>
+        <hr>
+        <p>Utilizando range </p>
+        <input type="range" name="valor_01" id="valor01">
+        10<br> <br>
+        <label for="texto01">sugestão</label>
+        <textarea name="texto01" id="texto01" cols="55" rows="4" placeholder="sugestao" maxlength="10" required> </textarea>
+        <hr>
+        <h1> ex de formulario</h1>
+        <fieldset>
+<hr>
+        <legend>identificação</legend>
+        <label for="cNome">Nome:</label><br />
+        <input type="text" size="50" name="tNome" id="cNome" required="required">
+        <br>
+        <p>você mora em:</p>
+        <input type="radio" name="tipo" id="cid" value="c"/>
+        <label for="cid">cidade</label>
+        <input type="radio" name="tipo" id="inter" value="I"/>
+        <label for="cid">interior</label> <br>
+         <hr>
+         
+    </fieldset>
+    <form method="post" id="fContato" action="mailto:liliane.zaki13@outlook.com"> </form>
+    <input type="submit" value="Enviar formulario">
+    </Form>
+
+</body>
+</html>
